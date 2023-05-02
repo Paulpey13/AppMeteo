@@ -1,0 +1,19 @@
+{
+  "Please_Enter_A_Valid_City_Name": "Пожалуйста, введите действительное название города ! ",
+  "Add_Favorite_City": "Добавить любимый город",
+  "Enter_your_city": "Введите свой город",
+  "City": "Город",
+  "Temperature": "Температура",
+  "Weather": "Погода",
+  "Delete_Selected_City": "Удалить выбранный город",
+  "Error": "Ошибка",
+  "Max_seven_days": "Макс. 7 дней!!",
+  "Settings": "Опции",
+  "Is_all_ready_in": "  уже зарегистрирован !  ",
+  "About": "О",
+  "ThisApp": "Это приложение было разработано \n \n Отделом обучения программной инженерии \n \n MUCKENSTURM Nicolas, PEYSSARD Paul, \n \nTCHABODI Fridawis и MOUSSA Jordan \n \n ",
+  
+ "Metric" : "Метрическая",
+"Imperial" : "Императорский",
+"Standard" : "Стандарт"
+}

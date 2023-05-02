@@ -1,0 +1,18 @@
+{
+  "Please_Enter_A_Valid_City_Name": "¡ Por favor, introduzca un nombre de ciudad válido ! ",
+  "Add_Favorite_City": "Añadir ciudad favorita",
+  "Enter_your_city": "Introduzca su ciudad",
+  "City": "Ciudad",
+  "Temperature": "Temperatura",
+  "Weather": "Tiemp",
+  "Delete_Selected_City": "Borrar ciudad seleccionada",
+  "Error": "Error",
+  "Max_seven_days": "¡Max 7 días !",
+  "Settings": "Opciones",
+  "Is_all_ready_in": " ya está registrado ! ",
+  "About": "A proposito",
+  "ThisApp": "Esta aplicación fue desarrollada en el marco \n \n de la Unidad Docente de Ingeniería de Software por \n \n MUCKENSTURM Nicolas, PEYSSARD Paul, \n \nTCHABODI Fridawis y MOUSSA Jordan \n \n ",
+  "Metric" : "Métrico",
+  "Imperial" : "Imperial",
+  "Standard" : "Estándar"
+}

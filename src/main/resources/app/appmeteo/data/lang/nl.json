@@ -1,0 +1,19 @@
+{
+  "Please_Enter_A_Valid_City_Name": "Voer een geldige plaatsnaam in ! ",
+  "Add_Favorite_City": "Favoriete stad toevoegen",
+  "Enter_your_city": "Voer uw stad in",
+  "City": "Stad",
+  "Temperature": "Temperatuur",
+  "Weather": "Weer ",
+  "Delete_Selected_City": "Verwijder geselecteerde stad",
+  "Error": "Fout",
+  "Max_seven_days": "Max 7 dagen !",
+  "Settings": "Opties",
+  "Is_all_ready_in": "   is al geregistreerd !",
+  "About": "Over",
+  "ThisApp": "Deze applicatie is ontwikkeld in het kader \n \n van de Software Engineering Teaching Unit door \n \n MUCKENSTURM Nicolas, PEYSSARD Paul, \n \nTCHABODI Fridawis en MOUSSA Jordan \n \n ",
+  "Metric" : "Metriek",
+  "Imperial" : "Imperiaal",
+  "Standard" :"Standaard"
+
+}

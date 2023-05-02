@@ -1,0 +1,18 @@
+{
+  "Please_Enter_A_Valid_City_Name": "Vă rugăm să introduceți un nume de oraș valid! ",
+  "Add_Favorite_City": "Adăugați orașul preferat",
+  "Enter_your_city": "Intră în orașul tău",
+  "City": "Oraș",
+  "Temperature": "Temperatura",
+  "Weather": "Vreme",
+  "Delete_Selected_City": "Ștergeți orașul selectat",
+  "Error": "Eroare",
+  "Max_seven_days": "Max 7 zile! ",
+  "Settings": "Opțiuni",
+  "Is_all_ready_in": " este deja înregistrat ! ",
+  "About": "Despre",
+  "ThisApp": "Această aplicație a fost dezvoltată în cadrul \n \n Unității de predare inginerie software de către \n \n MUCKENSTURM Nicolas, PEYSSARD Paul, \n \n TCHABODI Fridawis și MOUSSA Jordan \n \n",
+  "Metric" : "Metric",
+  "Imperial" : "Imperial",
+  "Standard" : "Standard"
+}

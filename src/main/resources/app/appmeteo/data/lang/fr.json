@@ -1,0 +1,18 @@
+{
+  "Please_Enter_A_Valid_City_Name": "Entrez une ville valide s'il vous plaît ! ",
+  "Add_Favorite_City": "Ajouter une ville aux favoris",
+  "Enter_your_city": "Entrez votre ville",
+  "City": "Ville",
+  "Temperature": "Temperature",
+  "Weather": "Temps",
+  "Delete_Selected_City": "Supprimer une ville selectionnée",
+  "Error": "Erreur",
+  "Max_seven_days": "Max 7 jours  !",
+  "Settings": "Options",
+  "Is_all_ready_in": " est deja enregistrée !  ",
+  "About": "A propos",
+  "ThisApp": "Cette application a étée developée dans le cadre \n\n de l'Unité d'Enseignement de Génie Logiciel par \n\n MUCKENSTURM Nicolas ,PEYSSARD Paul ,\n\nTCHABODI Fridawis et MOUSSA Jordan\n\n",
+  "Metric" : "Metrique",
+  "Standard" : "Standard",
+  "Imperial" : "Impériale"
+}

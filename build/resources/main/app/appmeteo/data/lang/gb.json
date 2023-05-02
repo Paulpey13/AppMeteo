@@ -1,0 +1,19 @@
+{
+   "Please_Enter_A_Valid_City_Name":"Please enter a valid city name ! ",
+   "Add_Favorite_City":"Add favorite city",
+   "Enter_your_city":"Enter your city",
+   "City":"City",
+   "Temperature":"Temperature",
+   "Weather":"Weather",
+   "Delete_Selected_City":"Delete selected city",
+   "Error":"Error",
+   "Max_seven_days":"Max 7 days !",
+   "Settings":"Settings",
+   "Is_all_ready_in" : "  is already registered !  ",
+   "About" : "About",
+   "ThisApp" : "This application was developed within the framework \n \n of the Software Engineering Teaching Unit by \n \n MUCKENSTURM Nicolas, PEYSSARD Paul, \n \n TCHABODI Fridawis and MOUSSA Jordan \n \n ",
+   "Metric" : "Metric",
+   "Imperial" : "Imperial",
+   "Standard" : "Standard"
+
+}

@@ -1,0 +1,163 @@
+Index: build/resources/main/app/appmeteo/view/AppMeteoDay.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import javafx.geometry.*?>\n<?import javafx.scene.*?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.image.*?>\n<?import javafx.scene.layout.*?>\n<?import javafx.scene.text.*?>\n\n<Pane id=\"Main_container\" maxHeight=\"510.0\" maxWidth=\"650.0\" minHeight=\"487.0\" minWidth=\"650.0\" prefHeight=\"507.0\" prefWidth=\"650.0\" xmlns=\"http://javafx.com/javafx/10.0.2-internal\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"app.appmeteo.controller.AppMeteoController\">\n   <children>\n      <FlowPane id=\"Container_Title\" layoutX=\"-1.0\" prefHeight=\"187.0\" prefWidth=\"526.0\">\n         <children>\n            <Label id=\"Lbl_Title\" alignment=\"CENTER\" contentDisplay=\"CENTER\" prefHeight=\"37.0\" prefWidth=\"547.0\" text=\"MyAppMeteo\" textFill=\"#0a96d1\">\n               <font>\n                  <Font size=\"30.0\" />\n               </font>\n            </Label>\n         </children>\n      </FlowPane>\n      <VBox id=\"Container_Settings\" layoutX=\"546.0\" prefHeight=\"200.0\" prefWidth=\"100.0\">\n         <children>\n            <Button id=\"Bt_Display_mode\" mnemonicParsing=\"false\" style=\"-fx-background-color: #A2D6CF;\">\n               <opaqueInsets>\n                  <Insets />\n               </opaqueInsets>\n               <VBox.margin>\n                  <Insets bottom=\"10.0\" top=\"10.0\" />\n               </VBox.margin>\n               <graphic>\n               <ImageView id=\"Bt_Mode\" disable=\"true\" fitHeight=\"40.0\" fitWidth=\"40.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                  <image>\n                     <Image url=\"@../data/img/icons8-sun-100.png\" />\n                  </image>\n               </ImageView>\n               </graphic>\n\n            </Button>\n            <Button id=\"Bt_Lang\" mnemonicParsing=\"false\" style=\"-fx-background-color: #A2D6CF;\">\n               <opaqueInsets>\n                  <Insets />\n               </opaqueInsets>\n               <graphic>\n                  <ImageView id=\"Bt_lang\" disable=\"true\" fitHeight=\"31.0\" fitWidth=\"40\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                     <image>\n                        <Image url=\"@../data/img/flags/gb.png\" />\n                     </image>\n                  </ImageView>\n               </graphic>\n            </Button>\n            <Button id=\"Bt_Units\" mnemonicParsing=\"false\" style=\"-fx-background-color: #A2D6CF;\">\n               <opaqueInsets>\n                  <Insets />\n               </opaqueInsets>\n               <graphic>\n                  <ImageView id=\"Bt_Unit\" disable=\"true\" fitHeight=\"40\" fitWidth=\"40\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                     <image>\n                        <Image url=\"@../data/img/icons8-length-100.png\" />\n                     </image>\n                  </ImageView>\n               </graphic>\n               <VBox.margin>\n                  <Insets bottom=\"10.0\" top=\"10.0\" />\n               </VBox.margin>\n            </Button>\n         </children>\n      </VBox>\n      <Pane id=\"Request_Container\" layoutY=\"200.0\" prefHeight=\"287.0\" prefWidth=\"279.0\">\n         <children>\n            <TextField fx:id=\"Input_text\" layoutX=\"6.0\" layoutY=\"14.0\" prefHeight=\"26.0\" prefWidth=\"223.0\" promptText=\"Enter your city\" style=\"-fx-border-color: #A2D6CF;\" />\n            <DatePicker fx:id=\"Date_picker\" layoutX=\"6.0\" layoutY=\"46.0\" prefHeight=\"26.0\" prefWidth=\"267.0\" promptText=\"01/01/2021\" showWeekNumbers=\"true\" style=\"-fx-background-color: #A2D6CF;\" />\n            <ImageView id=\"Pict_weather\" fitHeight=\"26.0\" fitWidth=\"30.0\" layoutX=\"16.0\" layoutY=\"151.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-weather-100.png\" />\n               </image>\n            </ImageView>\n            <Label fx:id=\"Lb_Weather_Desc\" layoutX=\"70.0\" layoutY=\"151.0\" text=\": Null\" textFill=\"#0a96d1\" />\n            <ImageView id=\"Pict_city\" fitHeight=\"26.0\" fitWidth=\"30.0\" layoutX=\"16.0\" layoutY=\"119.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-city-100.png\" />\n               </image>\n            </ImageView>\n            <Label fx:id=\"Lb_City_name\" layoutX=\"70.0\" layoutY=\"119.0\" text=\": Null\" textFill=\"#0a96d1\" />\n            <ImageView id=\"Pict_wind\" fitHeight=\"26.0\" fitWidth=\"30.0\" layoutX=\"16.0\" layoutY=\"188.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-wind-100.png\" />\n               </image>\n            </ImageView>\n            <Label fx:id=\"Lb_wind\" layoutX=\"70.0\" layoutY=\"188.0\" text=\": Null\" textFill=\"#0a96d1\" />\n            <ImageView id=\"Pict_Temperature\" fitHeight=\"26.0\" fitWidth=\"30.0\" layoutX=\"16.0\" layoutY=\"223.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-temperature-sensitive-100.png\" />\n               </image>\n            </ImageView>\n            <Label fx:id=\"Lb_Temperature\" layoutX=\"70.0\" layoutY=\"223.0\" text=\": Null\" textFill=\"#0a96d1\" />\n            <Button id=\"Bt_Search\" fx:id=\"Bt_search\" layoutX=\"233.0\" layoutY=\"12.0\" mnemonicParsing=\"false\" onMousePressed=\"#MakeQuest\" prefHeight=\"30.0\" prefWidth=\"40.0\" style=\"-fx-background-color: #A2D6CF;\">\n\n               <opaqueInsets>\n                  <Insets />\n               </opaqueInsets>\n            </Button>\n            <ImageView disable=\"true\" fitHeight=\"26.0\" fitWidth=\"26.0\" layoutX=\"240.0\" layoutY=\"14.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-search-100.png\" />\n               </image>\n            </ImageView>\n         </children>\n      </Pane>\n      <Pane id=\"Container_Fav\" layoutX=\"285.0\" layoutY=\"221.0\" prefHeight=\"242.0\" prefWidth=\"367.0\">\n         <children>\n            <ImageView id=\"Bt_Unit\" fitHeight=\"40\" fitWidth=\"40\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-pin-in-circle-100.png\" />\n               </image>\n            </ImageView>\n            <ScrollPane blendMode=\"DARKEN\" layoutX=\"20.0\" layoutY=\"40.0\" prefHeight=\"200.0\" prefWidth=\"337.0\" style=\"-fx-border-color: #A2D6CF;\">\n              <content>\n                <AnchorPane id=\"BookMarks_Container\" depthTest=\"DISABLE\" minHeight=\"0.0\" minWidth=\"0.0\" prefHeight=\"200.0\" prefWidth=\"340.0\">\n                     <children>\n                        <TableView fx:id=\"Table_BookMark\" blendMode=\"SRC_ATOP\" depthTest=\"ENABLE\" prefHeight=\"200.0\" prefWidth=\"319.0\">\n                          <columns>\n                          </columns>\n                           <columnResizePolicy>\n                           </columnResizePolicy>\n                        </TableView>\n                     </children></AnchorPane>\n              </content>\n               <cursor>\n                  <Cursor fx:constant=\"HAND\" />\n               </cursor>\n            </ScrollPane>\n            <ImageView disable=\"true\" fitHeight=\"26.0\" fitWidth=\"26.0\" layoutX=\"294.0\" layoutY=\"1.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../data/img/icons8-add-to-favorites-100.png\" />\n               </image>\n            </ImageView>\n            <TextField fx:id=\"Input_BookMarks\" layoutX=\"51.0\" layoutY=\"3.0\" prefHeight=\"26.0\" prefWidth=\"223.0\" promptText=\"Add favorite city \" style=\"-fx-border-color: #A2D6CF;\" />\n            <Button id=\"Bt_Search\" fx:id=\"Bt_Add_bookmarks\" layoutX=\"287.0\" mnemonicParsing=\"false\" onMousePressed=\"#AddBookMarks\" prefHeight=\"28.0\" prefWidth=\"40.0\" style=\"-fx-background-color: #A2D6CF;\">\n               <opaqueInsets>\n                  <Insets />\n               </opaqueInsets>\n            </Button>\n         </children>\n      </Pane>\n      <Button fx:id=\"deleteSelectedCity\" onAction=\"#deleteRowFromTable\" layoutX=\"306.0\" layoutY=\"471.0\" mnemonicParsing=\"false\" prefHeight=\"25.0\" prefWidth=\"337.0\" text=\"Delete Selected City\" />\n   </children>\n</Pane>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/resources/main/app/appmeteo/view/AppMeteoDay.fxml b/build/resources/main/app/appmeteo/view/AppMeteoDay.fxml
+--- a/build/resources/main/app/appmeteo/view/AppMeteoDay.fxml	(revision f729376b9b29ab3dc796a2cf8dc0f05c6bddcf28)
++++ b/build/resources/main/app/appmeteo/view/AppMeteoDay.fxml	(date 1615201313184)
+@@ -1,13 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.geometry.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.image.*?>
+-<?import javafx.scene.layout.*?>
+-<?import javafx.scene.text.*?>
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.DatePicker?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.TableView?>
++<?import javafx.scene.control.TextField?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.layout.FlowPane?>
++<?import javafx.scene.layout.Pane?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
+ 
+-<Pane id="Main_container" maxHeight="510.0" maxWidth="650.0" minHeight="487.0" minWidth="650.0" prefHeight="507.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.appmeteo.controller.AppMeteoController">
++<Pane fx:id="Main_container" maxHeight="510.0" maxWidth="650.0" minHeight="487.0" minWidth="650.0" prefHeight="507.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.appmeteo.controller.AppMeteoController">
+    <children>
+       <FlowPane id="Container_Title" layoutX="-1.0" prefHeight="187.0" prefWidth="526.0">
+          <children>
+@@ -20,7 +27,7 @@
+       </FlowPane>
+       <VBox id="Container_Settings" layoutX="546.0" prefHeight="200.0" prefWidth="100.0">
+          <children>
+-            <Button id="Bt_Display_mode" mnemonicParsing="false" style="-fx-background-color: #A2D6CF;">
++            <Button id="Bt_Display_mode" mnemonicParsing="false" onMouseClicked="#ChangeMode" style="-fx-background-color: #A2D6CF;">
+                <opaqueInsets>
+                   <Insets />
+                </opaqueInsets>
+@@ -28,11 +35,11 @@
+                   <Insets bottom="10.0" top="10.0" />
+                </VBox.margin>
+                <graphic>
+-               <ImageView id="Bt_Mode" disable="true" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+-                  <image>
+-                     <Image url="@../data/img/icons8-sun-100.png" />
+-                  </image>
+-               </ImageView>
++                  <ImageView id="Bt_Mode" disable="true" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
++                     <image>
++                        <Image url="@../data/img/icons8-sun-100.png" />
++                     </image>
++                  </ImageView>
+                </graphic>
+ 
+             </Button>
+@@ -99,6 +106,7 @@
+                   <Insets />
+                </opaqueInsets>
+             </Button>
++
+             <ImageView disable="true" fitHeight="26.0" fitWidth="26.0" layoutX="240.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                   <Image url="@../data/img/icons8-search-100.png" />
+@@ -106,42 +114,40 @@
+             </ImageView>
+          </children>
+       </Pane>
+-      <Pane id="Container_Fav" layoutX="285.0" layoutY="221.0" prefHeight="242.0" prefWidth="367.0">
++      <Pane id="Container_Fav" layoutX="285.0" layoutY="202.0" prefHeight="261.0" prefWidth="367.0">
+          <children>
+-            <ImageView id="Bt_Unit" fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true">
++            <ImageView id="Bt_Unit" fitHeight="30.0" fitWidth="40" layoutX="21.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                   <Image url="@../data/img/icons8-pin-in-circle-100.png" />
+                </image>
+             </ImageView>
+-            <ScrollPane blendMode="DARKEN" layoutX="20.0" layoutY="40.0" prefHeight="200.0" prefWidth="337.0" style="-fx-border-color: #A2D6CF;">
+-              <content>
+-                <AnchorPane id="BookMarks_Container" depthTest="DISABLE" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="340.0">
+-                     <children>
+-                        <TableView fx:id="Table_BookMark" blendMode="SRC_ATOP" depthTest="ENABLE" prefHeight="200.0" prefWidth="319.0">
+-                          <columns>
+-                          </columns>
+-                           <columnResizePolicy>
+-                           </columnResizePolicy>
+-                        </TableView>
+-                     </children></AnchorPane>
+-              </content>
+-               <cursor>
+-                  <Cursor fx:constant="HAND" />
+-               </cursor>
+-            </ScrollPane>
+-            <ImageView disable="true" fitHeight="26.0" fitWidth="26.0" layoutX="294.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+-               <image>
+-                  <Image url="@../data/img/icons8-add-to-favorites-100.png" />
+-               </image>
+-            </ImageView>
+-            <TextField fx:id="Input_BookMarks" layoutX="51.0" layoutY="3.0" prefHeight="26.0" prefWidth="223.0" promptText="Add favorite city " style="-fx-border-color: #A2D6CF;" />
+-            <Button id="Bt_Search" fx:id="Bt_Add_bookmarks" layoutX="287.0" mnemonicParsing="false" onMousePressed="#AddBookMarks" prefHeight="28.0" prefWidth="40.0" style="-fx-background-color: #A2D6CF;">
+-               <opaqueInsets>
+-                  <Insets />
+-               </opaqueInsets>
++            <AnchorPane fx:id="BookMarks_Container" depthTest="DISABLE" layoutX="20.0" layoutY="40.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="340.0">
++               <children>
++                  <TableView fx:id="Table_BookMark" blendMode="SRC_ATOP" depthTest="ENABLE" layoutY="13.0" prefHeight="200.0" prefWidth="319.0" style="-fx-border-color: #4a90e2;">
++                     <columns>
++
++                     </columns>
++                     <columnResizePolicy>
++                     </columnResizePolicy>
++                  </TableView>
++               </children></AnchorPane>
++
++
++            <TextField fx:id="Input_BookMarks" layoutX="57.0" layoutY="4.0" prefHeight="27.0" prefWidth="252.0" promptText="Add favorite city " style="-fx-border-color: #A2D6CF;" />
++            <Button id="Bt_Search" fx:id="Bt_Add_bookmarks" layoutX="317.0" layoutY="3.0" mnemonicParsing="false" onMousePressed="#AddBookMarks" prefHeight="0.0" prefWidth="40.0" style="-fx-background-color: #A2D6CF;">
++               <opaqueInsets>
++                  <Insets />
++               </opaqueInsets>
++               <graphic>
++                  <ImageView disable="true" fitHeight="20.0" fitWidth="26.0" layoutX="324.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
++                     <image>
++                        <Image url="@../data/img/icons8-add-to-favorites-100.png" />
++                     </image>
++                  </ImageView>
++               </graphic>
+             </Button>
+          </children>
+       </Pane>
+-      <Button fx:id="deleteSelectedCity" onAction="#deleteRowFromTable" layoutX="306.0" layoutY="471.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="337.0" text="Delete Selected City" />
++      <Button fx:id="deleteSelectedCity" layoutX="306.0" layoutY="471.0" mnemonicParsing="false" onAction="#deleteRowFromTable" prefHeight="25.0" prefWidth="337.0" style="-fx-background-color: #A2D6CF;" text="Delete Selected City" textFill="#4a90e2" />
+    </children>
+ </Pane>
+Index: build/resources/main/app/appmeteo/data/Bookmarks.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+> MARSEILLE\n TOULOUSE\n PARIS\n TOULON\n STRASBOURG\n LYON\n nantes
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/resources/main/app/appmeteo/data/Bookmarks.txt b/build/resources/main/app/appmeteo/data/Bookmarks.txt
+--- a/build/resources/main/app/appmeteo/data/Bookmarks.txt	(revision f729376b9b29ab3dc796a2cf8dc0f05c6bddcf28)
++++ b/build/resources/main/app/appmeteo/data/Bookmarks.txt	(date 1615201313148)
+@@ -1,7 +1,1 @@
+- MARSEILLE
+- TOULOUSE
+- PARIS
+- TOULON
+- STRASBOURG
+- LYON
+- nantes
+\ No newline at end of file
++ 
+\ No newline at end of file

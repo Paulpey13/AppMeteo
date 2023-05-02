@@ -1,0 +1,18 @@
+{
+  "Please_Enter_A_Valid_City_Name": "Kérjük, adjon meg érvényes városnevet! ",
+  "Add_Favorite_City": "Kedvenc város hozzáadása",
+  "Enter_your_city": "Írja be városát",
+  "City": "Város",
+  "Temperature": "Hőfok",
+  "Weather": "Időjárás",
+  "Delete_Selected_City": "Törölje a kiválasztott várost ",
+  "Error": "Hiba",
+  "Max_seven_days": "Max. 7 nap !",
+  "Settings": "Lehetőségek",
+  "Is_all_ready_in": " már regisztrálva van !",
+  "About": "Ról ről",
+  "ThisApp": "Ezt az alkalmazást a Software Engineering Teaching Unit \n \n keretében fejlesztette ki \n \n MUCKENSTURM Nicolas, PEYSSARD Paul, \n \nTCHABODI Fridawis és MOUSSA Jordan \n \n ",
+  "Metric" :"Metrikus",
+  "Imperial" : "Császári",
+  "Standard" : "Alapértelmezett"
+}
