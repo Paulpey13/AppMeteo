@@ -12,8 +12,9 @@ une application de prédiction météo.
 
  Documentation JSONS : https://riptutorial.com/java/example/1979/decoding-json-data
 
- Clef API : 63768e6854d1c8436c4ca14ddaba87cc
+ Clef API : 
 
+En collaboration avec Jordan Moussa et Nicolas Munckensturm
 
 
  color font night mode #4a90e2
